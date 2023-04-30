@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media(prefers-reduce-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+@keyframes transitionIn2{
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@font-face {
+    font-family: MavenPro;
+    src: url(Font/MavenPro-VariableFont_wght.ttf);
+    /* font-weight: 400 900; */
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(Font/Outfit-VariableFont_wght.ttf);
+    /* font-weight: 100 900; */
+}
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.site-background{
+    background-color: rgb(220, 220, 220);
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+
+ /* HEADER HEADER HEADER HEADER */
+
+
+header{
+    display: flex;
+    /*border: 1px solid white;*/
+    justify-content: space-between;
+    animation: transitionIn 2.0s;
+}
+
+.main-title{
+    color: rgb(0, 0, 0);
+    font-family: MavenPro;
+    font-size: 30px;
+    font-weight: 650;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    cursor: default;
+    text-decoration: none;
+    /*border: 1px solid white;*/
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    
+}
+
+.main-title:hover {
+    transform: translateY(-6px);
+    color: rgba(60, 60, 60, 0.717);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    /*border: 1px solid white;*/
+    align-items: center;
+    margin-right: 32px;
+}
+
+nav{
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+.nav-links, li{
+
+    text-decoration: none;
+    font-size: 27px;
+}
+.projects{
+    color: rgb(0, 0, 0);
+    font: 500 23px MavenPro;
+    cursor: pointer;
+
+}
+#link-a{
+    display: inline-block;
+    text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+#link-a:hover{
+    transform: translateY(-6px);
+    color: rgba(60, 60, 60, 0.717);
+}
+
+#link-b{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+#link-b:hover{
+    transform: translateY(-6px);
+    color: rgba(60, 60, 60, 0.717);
+}
+
+.contact{
+    color: rgb(0, 0, 0);
+    font: 500 23px MavenPro;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+
+
+.insta-link{
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-left: 32px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.insta-link:hover{
+    transform: translateY(-6px);
+    color: rgba(60, 60, 60, 0.717);
+
+}
+
+.behance-link{
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-left: 32px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.behance-link:hover{
+    transform: translateY(-6px);
+    color: rgba(60, 60, 60, 0.717);
+}
+
+
+
+
+/* SECTION SECTION SECTION */
+
+
+.big-text{
+    color: rgb(0, 0, 0);
+    font: 400 70px Outfit;
+    /* border: 2px solid white; */
+    margin: 0px;
+    margin-left: 250px;
+    margin-top: 120px;
+    cursor: default;
+    justify-content: center;
+    animation: transitionIn2 2.0s;
+    transition-timing-function: ease-out;
+}
+
+.f-line, .s-line, .t-line{
+    /* border: 1px solid white; */
+    margin: 0px;
+}
+
+.s-line{
+    font: 300 25px Outfit;
+    width: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.t-line{
+    font: 300 30px Outfit;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.email{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.word{
+    /* border: 2px solid white; */
+    margin: 0px;
+}
+.email{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.email:hover{
+    color: rgba(60, 60, 60, 0.717);
+    text-decoration: none;
+}
+
+#pad{
+    padding-left: 30px;
+}
+
+
+
+
+
